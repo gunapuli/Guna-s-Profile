@@ -1,10 +1,10 @@
-name: Deploy Prasanna-Profile to GitHub Pages
+name: Deploy guna to GitHub Pages
 
 on:
   push:
     branches: [ main ]
     paths:
-      - "Prasanna-Profile/**"
+      - "guna/**"
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Prasanna-Profile   # 👈 this is your folder with index.html
+          path: guna  # 👈 this is your folder with index.html
 
       - name: Deploy to GitHub Pages
         id: deployment
